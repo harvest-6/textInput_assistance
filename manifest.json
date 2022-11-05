@@ -1,0 +1,36 @@
+{
+    "manifest_version": 1,
+    "version": "1.0",
+    "type": "APP",
+    "name": {
+        "ja": "kintoneプラグインのテンプレート",
+        "en": "kintonepulugintemplate"
+    },
+    "description": {
+        "ja": "kintoneプラグインのテンプレートです。設定値を一覧画面でコンソールログへ出力します。",
+        "en": "This is a kintone plugin template.Outputs the setting values ​​to the console log on the list screen."
+    },
+    "icon": "image/icon.png",
+    "homepage_url": {
+        "ja": "https://qiita.com/necomochi/items/0ba94f6e9a9762aed5f1"
+    },
+    "desktop": {
+        "js": [
+            "js/desktop.js"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+        "js": [
+            "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
+            "js/kintone-config-helper.js",
+            "https://js.cybozu.com/jsrender/1.0.6/jsrender.min.js",
+            "js/config.js"
+        ],
+        "css": [
+                "css/config.css",
+                "css/51-modern-default.css"
+        ],
+        "required_params": ["check", "text", "field"]
+    }
+}
