@@ -1,0 +1,53 @@
+<div id="kintoneplugin_template">
+	<div class="block">
+		<label class="kintoneplugin-label">
+			<span class="container_label">表示スペース</span>
+			<span class="kintoneplugin-require">*</span>
+		</label>
+		<div class="kintoneplugin-row">入力補助を作成するスペースフィールドを設定して下さい</div>
+		<div class="kintoneplugin-select-outer">
+			<div class="kintoneplugin-select">
+				<select id="select_spece" name="select_spece">
+					<option value="">-----</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="block">
+		<label class="kintoneplugin-label">
+			<span class="container_label">入力元</span>
+			<span class="kintoneplugin-require">*</span>
+		</label>
+		<div class="kintoneplugin-row">入力元の文字列が格納してるフィールド（文字列一行）を選択して下さい。※選択肢はカンマ区切りで設定して下さい。</div>
+		<div class="kintoneplugin-select-outer">
+			<div class="kintoneplugin-select">
+				<select id="select_souce" name="select_souce">
+					<option value="">-----</option>
+				</select>
+			</div>
+		</div>
+		<div class="kintoneplugin-row">入力元の文字列を入力して下さい。（入力元フィールド選択されていた場合は、そちらを優先して表示します。）</div>
+		<div class="kintoneplugin-input-outer">
+			<textarea id="textbox_value" class="kintoneplugin-input-text"></textarea>
+		</div>
+	</div>
+	<div class="block">
+		<label class="kintoneplugin-label">
+			<span class="container_label">入力先</span>
+			<span class="kintoneplugin-require">*</span>
+		</label>
+		<div class="kintoneplugin-row">入力先となるフィールド（文字列一行or複数行）を選択して下さい。</div>
+		<div class="kintoneplugin-select-outer">
+			<div class="kintoneplugin-select">
+				<select id="select_enter" name="select_enter">
+					<option value="">-----</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="block">
+		<button type="button" id="plugin-submit" class="kintoneplugin-button-dialog-ok">保存する</button>
+		<button type="button" id="plugin-cancel" class="kintoneplugin-button-dialog-cancel">キャンセル</button>
+	</div>
+</div>

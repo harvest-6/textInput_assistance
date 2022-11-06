@@ -1,0 +1,70 @@
+.kuc-multiple-list.kuc-list-outer {
+    user-select: none;
+    box-shadow: 1px 1px 12px #f5f5f5 inset, -1px -1px 12px #f5f5f5 inset;
+}
+.kuc-multiple-list.kuc-list-outer {
+    max-width: 600px;
+    max-height: 500px;
+    overflow: auto;
+    min-width: 200px;
+}
+.kuc-multiple-list.kuc-list-outer.kuc-multiple-list-disable {
+    box-shadow: none;
+    background-color: #dbdcdd;
+}
+
+/*アイコン*/
+.hidden_box label::before {
+    content: '＋';
+    font-weight: 900;
+    padding-right: 8px;
+}
+/*クリックでアイコン入れ替え*/
+.hidden_box input:checked + label::before {
+    content: '-';
+}
+
+
+/*全体*/
+.hidden_box {
+    /*margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    /*padding: 15px;*/
+    /*font-weight: bold;*/
+    /*border: solid 2px black;*/
+    /*cursor :pointer;*/
+    
+    display: block;
+    /*font-weight: bold;*/
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}

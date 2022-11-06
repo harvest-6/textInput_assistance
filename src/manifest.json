@@ -3,12 +3,12 @@
     "version": "1.0",
     "type": "APP",
     "name": {
-        "ja": "kintoneプラグインのテンプレート",
-        "en": "kintonepulugintemplate"
+        "en": "textInput_assistance",
+        "ja": "入力補助プラグイン"
     },
     "description": {
-        "ja": "kintoneプラグインのテンプレートです。設定値を一覧画面でコンソールログへ出力します。",
-        "en": "This is a kintone plugin template.Outputs the setting values ​​to the console log on the list screen."
+        "en": "It is a plug-in that adds input auxiliary functions that can be selected multiple times.",
+        "ja": "複数選択可能な入力補助機能を追加するプラグインです。"
     },
     "icon": "image/icon.png",
     "homepage_url": {
@@ -16,7 +16,11 @@
     },
     "desktop": {
         "js": [
+            "https://unpkg.com/kintone-ui-component/umd/kuc.min.js",
             "js/desktop.js"
+        ],
+        "css": [
+            "css/desktop.css"
         ]
     },
     "config": {
@@ -31,6 +35,6 @@
                 "css/config.css",
                 "css/51-modern-default.css"
         ],
-        "required_params": ["check", "text", "field"]
+        "required_params": ["displayspace","enterfield"]
     }
 }
