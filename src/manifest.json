@@ -11,9 +11,6 @@
         "ja": "複数選択可能な入力補助機能を追加するプラグインです。"
     },
     "icon": "image/icon.png",
-    "homepage_url": {
-        "ja": "https://qiita.com/necomochi/items/0ba94f6e9a9762aed5f1"
-    },
     "desktop": {
         "js": [
             "https://unpkg.com/kintone-ui-component/umd/kuc.min.js",
